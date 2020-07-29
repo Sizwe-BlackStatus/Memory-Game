@@ -12,6 +12,8 @@ var i = 0;
 var clickedCards = [];
 var clickedCardsId = [];
 var matchingCards = [];
+const resetButton = document.querySelector('.reset-game');
+
 function gameFunctionality() {
   for (let i = 0; i < cardArrayCopy.length; i++) {
     cards[i];
@@ -65,5 +67,8 @@ function shuffleCard(cardArrayCopy) {
   }
   return cardArrayCopy;
 }
-
+function resetGame(){
+  location.reload();
+}
+resetButton.addEventListener('click', resetGame)
 gameFunctionality();
