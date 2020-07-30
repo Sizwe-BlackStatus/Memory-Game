@@ -1,10 +1,10 @@
 const cardArray = [
-  "pics/FB.png",
-  "pics/Insta.png",
-  "pics/Twitter.png",
-  "pics/whatsapp.png",
-  "pics/Yout.png",
-  "pics/Snapcha.png",
+  "pics/BatmanPose.png",
+  "pics/BatmanShadow.png",
+  "pics/JokerPose.png",
+  "pics/JokerShadow.png",
+  "pics/JokerWins.png",
+  "pics/Stalement.png",
 ];
 const cardArrayCopy = cardArray.concat(cardArray);
 var cards = document.getElementsByTagName("img");
@@ -34,11 +34,11 @@ function checkForMatch() {
   } else {
     cards[firstGuess].setAttribute(
       "src",
-      "pics/icons8-joker-suicide-squad-144.png"
+      "pics/Cover.png"
     );
     cards[secondGuess].setAttribute(
       "src",
-      "pics/icons8-joker-suicide-squad-144.png"
+      "pics/Cover.png"
     );
   }
   clickedCards = [];
