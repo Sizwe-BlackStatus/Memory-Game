@@ -12,7 +12,7 @@ var i = 0;
 var clickedCards = [];
 var clickedCardsId = [];
 var matchingCards = [];
-const resetButton = document.querySelector('.reset-game');
+const resetButton = document.querySelector(".reset-game");
 
 function gameFunctionality() {
   for (let i = 0; i < cardArrayCopy.length; i++) {
@@ -31,14 +31,8 @@ function checkForMatch() {
     cards[firstGuess].style.pointerEvents = "none";
     cards[secondGuess].style.pointerEvents = "none";
   } else {
-    cards[firstGuess].setAttribute(
-      "src",
-      "pics/Cover.png"
-    );
-    cards[secondGuess].setAttribute(
-      "src",
-      "pics/Cover.png"
-    );
+    cards[firstGuess].setAttribute("src", "pics/Cover.png");
+    cards[secondGuess].setAttribute("src", "pics/Cover.png");
   }
   clickedCards = [];
   clickedCardsId = [];
@@ -66,9 +60,9 @@ function shuffleCard(cardArrayCopy) {
   }
   return cardArrayCopy;
 }
-function resetGame(){
+function resetGame() {
   location.reload();
 }
-resetButton.addEventListener('click', resetGame)
+resetButton.addEventListener("click", resetGame);
 gameFunctionality();
-module.exports = {shuffleCard}
+module.exports = { shuffleCard };
