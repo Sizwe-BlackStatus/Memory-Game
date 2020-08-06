@@ -16,7 +16,6 @@ const resetButton = document.querySelector('.reset-game');
 
 function gameFunctionality() {
   for (let i = 0; i < cardArrayCopy.length; i++) {
-    cards[i];
     cards[i].addEventListener("click", flipcard);
   }
   shuffleCard(cardArrayCopy);
@@ -72,3 +71,4 @@ function resetGame(){
 }
 resetButton.addEventListener('click', resetGame)
 gameFunctionality();
+module.exports = {shuffleCard}
