@@ -6,7 +6,7 @@ const html = fs.readFileSync("index.html", "utf-8");
 const { document } = new JSDOM(html).window;
 global.document = document;
 
-const { shuffleCard } = require("../script.js");
+const { shuffleCard } = require("../src/script.js");
 const cardArray = [
   "pics/BatmanPose.png",
   "pics/BatmanShadow.png",
