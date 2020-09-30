@@ -1,0 +1,24 @@
+body {
+  background: rgb(10, 10, 10)
+}
+h1 {
+  color: rgb(248, 250, 246);
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  height: 460px;
+  width: 610px;
+  background: rgb(10, 10, 10);
+  padding: 10px;
+  
+}
+.reset-game {
+  background-color: rgb(10, 10, 10);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
